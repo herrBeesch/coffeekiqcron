@@ -1,6 +1,6 @@
 {
   "name": "coffeekiqcron",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Coffeescript/Node.js Library to enqueue jobs to the Sidekiq Queue with extensions for sidekiq-cron.",
   "homepage": "https://github.com/herrBeesch/coffeekiqcron",
   "keywords": [
