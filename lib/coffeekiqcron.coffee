@@ -1,5 +1,6 @@
-CoffeeKiq = require 'coffeekiq'
+CoffeeKiq = require('coffeekiq').CoffeeKiq
 class CoffeeKiqCron extends CoffeeKiq
-  find: (name)->
-    @redis_client.hgetall "cron_job:#{name}"
+  find: (name, cb)->
+    @.connect() unless @.connected
+    result = @redis_client.hgetall "cron_job:#{name}", cb
 exports.CoffeeKiqCron = CoffeeKiqCron
