@@ -7,7 +7,7 @@ npmRequire('coffeekiqcron').CoffeeKiqCron
 
 ## USAGE
 
-You can add `coffeekiq: "~>0.0.1"` into your `package.json` or use `npm install coffeekiq`
+You can add `coffeekiqcron: "~>0.0.1"` into your `package.json` or use `npm install coffeekiqcron`
 
 ```coffeescript
 # Creates an instance of CoffeeKiq
