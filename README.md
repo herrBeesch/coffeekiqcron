@@ -32,4 +32,7 @@ coffeekiq.find 'my_job', (err, result)->
   console.log err if err?
   console.dir result
 
+# Enqueue a stored cron process
+coffeekiq.enqueue 'my_job'
+
 ```
