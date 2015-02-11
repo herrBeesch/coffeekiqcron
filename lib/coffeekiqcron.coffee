@@ -12,7 +12,7 @@ class CoffeeKiqCron extends CoffeeKiq
           queue = result.queue
         else
           queue = 'default'
-        coffeekiq.perform queue, result.klass, msg.args
+        self.perform queue, result.klass, msg.args
       else
         console.log err
     return "trying to enqueue #{name}"
